@@ -19,7 +19,7 @@ while True:
         # Calculate area and remove small elements
         area = cv2.contourArea(cnt)
         if area > 100:
-            cv2.drawContours(roi,[cnt],-1, (0,255,255),2)
+            cv2.drawContours(roi,[cnt],-1, (0,0,255),2)
 
     cv2.imshow("Frame", frame)
     cv2.imshow("Mask",mask)
